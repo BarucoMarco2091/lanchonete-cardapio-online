@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BurgerDev - A Melhor Hamburgueria de São Paulo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/responsivity.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/variables.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <i class="fa-solid fa-burger">BurgerDev</i>
             <p>Rua Arafura 155, São Bernardo do Campo - SP</p>
             <div>
@@ -23,7 +27,9 @@
         </nav>
     </header>
     <main>
-        <section class="cardapio">
+        <section class="cardapio" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <h1>Cardápio</h1>
             <div class="grid">
                 <div class="card">
