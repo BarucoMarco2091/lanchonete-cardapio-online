@@ -17,6 +17,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 2dvh;
+        margin-bottom: 10dvh;
 
         .card {
             display: flex;
@@ -53,6 +54,19 @@
                     span {
                         color: $red;
                         font-weight: 500;
+                    }
+
+                    .add-to-cart-btn {
+                        background-color: $black;
+                        border: none;
+                        color: $primaryWhite;
+                        height: 5dvh;
+                        width: 8dvh;
+                        transition: opacity .8s;
+                    }
+
+                    .add-to-cart-btn:hover {
+                        opacity: 40%;
                     }
                 }
             }

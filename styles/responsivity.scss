@@ -4,5 +4,17 @@
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
+        margin: 1dvh 1dvh;
+    }
+}
+
+@media (width <= 768px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 1dvh 1dvh;
     }
 }

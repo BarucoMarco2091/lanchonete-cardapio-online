@@ -1,1 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");/*# sourceMappingURL=footer.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.cart-modal-button {
+  display: flex;
+  width: 100%;
+}
+.cart-modal-button #cart-btn {
+  width: 100%;
+  height: 5dvh;
+  border: none;
+  background-color: #FF3131;
+  color: #FFFFFF;
+  transition: opacity 1s;
+  animation: pulse 1s linear infinite;
+}
+.cart-modal-button #cart-btn:hover {
+  opacity: 40%;
+}/*# sourceMappingURL=footer.css.map */
