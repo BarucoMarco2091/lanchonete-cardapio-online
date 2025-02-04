@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+header {
+  background-image: url("../assets/bg (4).png");
+  height: 50%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 15dvh;
+}
+nav i, nav p {
+  margin-bottom: 4dvh;
+}
+nav i {
+  font-size: 2rem;
+}
+nav div {
+  background-color: #54CC0A;
+  width: 35dvh;
+  border-radius: 1dvh;
+}/*# sourceMappingURL=header.css.map */

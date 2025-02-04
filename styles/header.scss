@@ -1,0 +1,32 @@
+@import '../styles/variables.scss';
+
+header {
+    background-image: url('../assets/bg (4).png');
+    height: 50%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $primaryWhite;
+    padding-top: 15dvh;
+
+    i, p {
+        margin-bottom: 4dvh;
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    div {
+        background-color: $green;
+        width: 35dvh;
+        border-radius: 1dvh;
+    }
+}

@@ -1,0 +1,61 @@
+@import '../styles/variables.scss';
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: auto;
+
+    h1 {
+        text-align: center;
+        margin-top: 10dvh;
+        margin-bottom: 10dvh;
+        font-weight: 600;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2dvh;
+
+        .card {
+            display: flex;
+            gap: 2dvh;
+
+            img {
+                width: 25dvh;
+                height: 25dvh;
+                object-fit: cover;
+                border-radius: 1dvh;
+                transition: transform .8s;
+                filter: brightness(50%);
+            }
+
+            img:hover {
+                transform: rotate(4deg);
+            }
+
+            .card-text {
+                .card-title {
+                    font-weight: 600;
+                    margin-bottom: 2dvh;
+                }
+    
+                .card-description {
+                    margin-bottom: 2dvh;
+                    line-height: 1.5rem;
+                }
+    
+                .card-price {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    span {
+                        color: $red;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

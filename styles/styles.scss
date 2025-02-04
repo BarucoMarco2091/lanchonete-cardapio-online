@@ -1,0 +1,55 @@
+@import '../styles/footer.scss';
+@import '../styles/header.scss';
+@import '../styles/main.scss';
+@import '../styles/responsivity.scss';
+@import '../styles/variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+    outline: none;
+    overflow-x: hidden;
+    font-family: 'Roboto', serif;
+    background-color: $primaryWhite;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: $black;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+svg {
+    width: 100%;
+}
+
+@media (width <= 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+

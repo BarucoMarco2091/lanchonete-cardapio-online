@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.cardapio {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+}
+.cardapio h1 {
+  text-align: center;
+  margin-top: 10dvh;
+  margin-bottom: 10dvh;
+  font-weight: 600;
+}
+.cardapio .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2dvh;
+}
+.cardapio .grid .card {
+  display: flex;
+  gap: 2dvh;
+}
+.cardapio .grid .card img {
+  width: 25dvh;
+  height: 25dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1dvh;
+  transition: transform 0.8s;
+  filter: brightness(50%);
+}
+.cardapio .grid .card img:hover {
+  transform: rotate(4deg);
+}
+.cardapio .grid .card .card-text .card-title {
+  font-weight: 600;
+  margin-bottom: 2dvh;
+}
+.cardapio .grid .card .card-text .card-description {
+  margin-bottom: 2dvh;
+  line-height: 1.5rem;
+}
+.cardapio .grid .card .card-text .card-price {
+  display: flex;
+  justify-content: space-between;
+}
+.cardapio .grid .card .card-text .card-price span {
+  color: #FF3131;
+  font-weight: 500;
+}/*# sourceMappingURL=main.css.map */
