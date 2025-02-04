@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BurgerDev - A Melhor Hamburgueria de São Paulo</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/footer.css">
@@ -31,7 +32,7 @@
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">
             <h1>Cardápio</h1>
-            <div class="grid">
+            <div class="grid" id="menu">
                 <div class="card">
                     <img src="assets/hamb-1 (2).png" alt="">
                     <div class="card-text">
@@ -112,6 +113,7 @@
                 <p>Total: <span id="cart-total">0.00</span></p>
                 <p>Endereço de entrega:</p>
                 <input type="text" id="address" placeholder="Digite seu endereço completo">
+                <div id="address-warn">Digite seu endereço completo!</div>
                 <div>
                     <button id="close-modal-btn">Fechar</button>
                     <button id="checkout-btn">Finalizar pedido</button>

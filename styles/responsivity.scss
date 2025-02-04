@@ -11,7 +11,7 @@
 @media (width <= 768px) {
     .card {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         justify-content: center;
         text-align: center;
         align-items: center;

@@ -76,6 +76,7 @@ nav div {
 }
 .cardapio .grid .card {
   display: flex;
+  flex-direction: row;
   gap: 2dvh;
 }
 .cardapio .grid .card img {
@@ -118,14 +119,81 @@ nav div {
   opacity: 40%;
 }
 
+.fullscreen {
+  position: fixed;
+  z-index: 20;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.fullscreen .carrinho {
+  background-color: #FFFFFF;
+  min-width: 90%;
+  border-radius: 2dvh;
+  text-align: center;
+  font-weight: bold;
+  margin: 2dvh 2dvh;
+}
+.fullscreen .carrinho h2 {
+  margin-top: 2dvh;
+}
+.fullscreen .carrinho #cart-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fullscreen .carrinho p {
+  font-weight: bold;
+}
+.fullscreen .carrinho #address {
+  width: 90%;
+  padding: 2dvh 1dvh;
+  margin: 2dvh 1dvh;
+  border: none;
+  border-radius: 1dvh;
+}
+.fullscreen .carrinho #address-warn {
+  color: rgb(201, 62, 62);
+  font-weight: 500;
+  display: none;
+}
+.fullscreen .carrinho div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2dvh;
+  gap: 3dvh;
+}
+.fullscreen .carrinho div #close-modal-btn {
+  border: none;
+}
+.fullscreen .carrinho div #checkout-btn {
+  background-color: #54CC0A;
+  color: #FFFFFF;
+  padding: 2dvh 2dvh;
+  border-radius: 2dvh;
+  border: none;
+}
+
 @media (width >= 768px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
+    margin: 1dvh 1dvh;
   }
-  .grid .card {
+}
+@media (width <= 768px) {
+  .card {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 1dvh 1dvh;
   }
 }
 * {

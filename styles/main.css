@@ -19,6 +19,7 @@
 }
 .cardapio .grid .card {
   display: flex;
+  flex-direction: row;
   gap: 2dvh;
 }
 .cardapio .grid .card img {

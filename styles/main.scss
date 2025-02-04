@@ -21,6 +21,7 @@
 
         .card {
             display: flex;
+            flex-direction: row;
             gap: 2dvh;
 
             img {
