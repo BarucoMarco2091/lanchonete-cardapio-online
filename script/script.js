@@ -55,8 +55,40 @@ function addToCart(name, price) {
             quantity: 1,
         });
     };
-   
+    updateCartModal();
 };
 
 // Atualiza o carrinho
 
+function updateCartModal() {
+    cartItemsContainer.innerHTML = "";
+    let total = 0;
+    cart.forEach(item => {
+        const cartItemElement = document.createElement("div");
+        cartItemElement.innerHTML =
+            `
+        <div style="display: flex; justify-content: space-between; max-height: 400px; overflow-y: auto;">
+            <div>
+                <p>${item.name}</p>
+                <p>Qtd: ${item.quantity}</p>
+                <p>R$ ${item.price.toFixed(2)}</p>
+            </div>
+            <div>
+                <button class="remove-from-cart-btn" data-name="${item.name}">Remover</button>
+            </div>
+        </div>
+        `
+        total += item.price * item.quantity;
+
+        cartItemsContainer.appendChild(cartItemElement);
+    });
+
+    cartTotal.textContent = total.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    });
+
+    // Mudar o contador
+
+    cartCounter.innerHTML = cart.length;
+};
