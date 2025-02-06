@@ -1,5 +1,17 @@
 @import '../styles/variables.scss';
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    30% {
+        border-color: transparent;
+    }
+}
+
 header {
     background-image: url('../assets/bg (4).png');
     height: 50%;
@@ -15,6 +27,14 @@ nav {
     text-align: center;
     color: $primaryWhite;
     padding-top: 15dvh;
+
+    #typing, .typing{
+        width: 335px;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+    }
 
     i, p {
         margin-bottom: 4dvh;

@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  30% {
+    border-color: transparent;
+  }
+}
 header {
   background-image: url("../assets/bg (4).png");
   height: 50%;
@@ -14,6 +24,13 @@ nav {
   text-align: center;
   color: #FFFFFF;
   padding-top: 15dvh;
+}
+nav #typing, nav .typing {
+  width: 335px;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
 }
 nav i, nav p {
   margin-bottom: 4dvh;
