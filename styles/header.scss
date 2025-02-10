@@ -28,7 +28,7 @@ nav {
     color: $primaryWhite;
     padding-top: 15dvh;
 
-    #typing, .typing{
+    #typing, .typing {
         width: 335px;
         animation: typing 2s steps(22), blink .5s step-end infinite alternate;
         white-space: nowrap;
