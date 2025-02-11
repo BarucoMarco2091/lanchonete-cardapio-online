@@ -53,6 +53,7 @@
 .cardapio .grid .card .card-text .card-price .add-to-cart-btn {
   background-color: #000000;
   border: none;
+  border-radius: 1dvh;
   color: #FFFFFF;
   height: 5dvh;
   width: 8dvh;

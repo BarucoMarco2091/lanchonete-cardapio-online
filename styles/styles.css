@@ -28,6 +28,16 @@
   opacity: 40%;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  30% {
+    border-color: transparent;
+  }
+}
 header {
   background-image: url("../assets/bg (4).png");
   height: 50%;
@@ -43,6 +53,13 @@ nav {
   text-align: center;
   color: #FFFFFF;
   padding-top: 15dvh;
+}
+nav #typing, nav .typing {
+  width: 335px;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
 }
 nav i, nav p {
   margin-bottom: 4dvh;
@@ -110,6 +127,7 @@ nav div {
 .cardapio .grid .card .card-text .card-price .add-to-cart-btn {
   background-color: #000000;
   border: none;
+  border-radius: 1dvh;
   color: #FFFFFF;
   height: 5dvh;
   width: 8dvh;

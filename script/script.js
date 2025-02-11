@@ -114,3 +114,12 @@ function removeItemCart(name) {
         updateCartModal();
     };
 };
+
+// pegar o endereço
+
+addressInput.addEventListener('input', function(event) {
+    let inputValue = event.target.value;
+    if(inputValue !== "") {
+        addressWarn.style.display = "none"
+    };
+});
