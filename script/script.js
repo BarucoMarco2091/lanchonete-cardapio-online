@@ -126,6 +126,9 @@ addressInput.addEventListener('input', function(event) {
 
 // finalizar pedido 
 
-checkoutBtn.addEventListener('click', function() {
-    
+checkoutBtn.addEventListener("click", function() {
+    if(cart.length === 0) return;
+    if(addressInput.value === "") {
+        addressWarn.style.display = "block";
+    };
 });
