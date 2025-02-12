@@ -123,3 +123,9 @@ addressInput.addEventListener('input', function(event) {
         addressWarn.style.display = "none"
     };
 });
+
+// finalizar pedido 
+
+checkoutBtn.addEventListener('click', function() {
+    
+});
