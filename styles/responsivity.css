@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@media (width >= 768px) {
+@media (width >= 850px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
     margin: 1dvh 1dvh;
   }
 }
-@media (width <= 768px) {
+@media (width <= 850px) {
   .card {
     display: flex;
     flex-direction: column !important;

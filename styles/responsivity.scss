@@ -1,6 +1,6 @@
 @import '../styles/variables.scss';
 
-@media (width >= 768px) {
+@media (width >= 850px) {
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
@@ -8,7 +8,7 @@
     }
 }
 
-@media (width <= 768px) {
+@media (width <= 850px) {
     .card {
         display: flex;
         flex-direction: column !important;

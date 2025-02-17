@@ -131,4 +131,21 @@ checkoutBtn.addEventListener("click", function() {
     if(addressInput.value === "") {
         addressWarn.style.display = "block";
     };
+
+    const cartItems = cart.map((item) => {
+        return (
+            `${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} |`
+        );
+    }).join("");
+
+    // Enviar pedido para api do whatsapp
+    
+    const message = encodeURIComponent(cartItems);
+    const phone = "5511996221043";
+    window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank");
+    cart = [];
+    updateCartModal();
 });
+
+
+
